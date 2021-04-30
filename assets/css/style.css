@@ -2,9 +2,203 @@ body {
     font-family: 'Maven Pro', sans-serif;
     font-weight: 400;
 }
+b, strong {
+    font-weight: 700;
+}
+.container {
+    max-width: 1180px;
+}
+.btn {
+    border-radius: 0;
+    padding: 0.3rem 1.2rem 0.4rem;
+}
+.btn-primary:hover,
+.btn-green:hover {
+    background: #0c82af;
+    border-color: #0c82af;
+    color: #fff;
+}
+.btn-primary {
+    background: #ff6600;
+    border-color: #ff6600;
+}
+.text-primary {
+    color: #0c82af!important;
+}
+.bg-primary {
+    background: #0c82af!important;
+}
+.round-right {
+    border-radius: 0 0 1.2rem 0;
+}
+.btn-green {
+    background: #61ae0f;
+    border-color: #61ae0f;
+    color: #fff;
+}
 
 #header {
-    background: url(../img/banner.jpg);
+    background: url(../img/banner.jpg) right;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 90vh;
+}
+.navbar-brand {
+    background: #fff;
+    border-radius: 0 0 40px 0;
+}
+.navbar-brand img {
+    max-width: calc(100% - 24px);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+.main-nav {
+    font-weight: bold;
+}
+.navbar-dark .navbar-nav.main-nav .nav-link {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    font-size: 0.875rem;
+}
+
+.hero .cta {
+    background: rgba(13,86,125,0.72) url(../img/t-logo.png) no-repeat center right;
+    background-size: 80%;
+    border-radius: 0 0 50px 0;
+    overflow: hidden;
+    bottom: -3rem;
+}
+.hero .cta:before {
+    content: '';
+    background: -moz-linear-gradient(top,  rgba(13,86,125,0) 0%, rgba(13,86,125,1) 63%, rgba(13,86,125,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(13,86,125,0) 0%,rgba(13,86,125,1) 63%,rgba(13,86,125,1) 100%);
+    background: linear-gradient(to bottom,  rgba(13,86,125,0) 0%,rgba(13,86,125,1) 63%,rgba(13,86,125,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000d567d', endColorstr='#0d567d',GradientType=0 );
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.featured {
+    background: url(../img/featured-bg.jpg);
+    background-size: cover;
+}
+#featCarousel {
+    background: #fff;
+}
+#featCarousel .carousel-control-next, 
+#featCarousel .carousel-control-prev {
+    width: auto;
+    opacity: 1;
+}
+#featCarousel .carousel-control-next {
+    right: -1rem;
+}
+#featCarousel .carousel-control-prev {
+    left: -1rem;
+}
+#featCarousel .carousel-control-next .carousel-control-next-icon {
+    border-radius: 0 0 15px 0;
+}
+#featCarousel .carousel-control-prev .carousel-control-prev-icon {
+    border-radius: 0 0 0 15px;
+}
+#featCarousel .carousel-control-next .carousel-control-next-icon, 
+#featCarousel .carousel-control-prev .carousel-control-prev-icon {
+    background-color: #ff6600;
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid #ff6600;
+}
+#featCarousel .btn {
+    padding: 0.3rem 0.6rem;
+}
+.slide-img {
+    background-size: cover;
+}
+
+.mountain-bg {
+    background: url(../img/bergen-watermerk.png) no-repeat right;
+    background-size: contain;
+}
+
+.footer {
+    background: #e5e5e5;
+}
+.footer:before {
+    content: '';
+    height: 80px;
+    background: #fff;
+    display: block;
+}
+.fields {
+    top: 0;
+    z-index: 0;
+}
+.form-info {
+    background: #0c82af url(../img/watermerk.png) no-repeat center right;
+    background-size: 90%;
+}
+.form-contact {
+    background: rgba(12, 130, 175, 0.82);
+    border-radius: 0 0 15% 0;
+}
+.form-control {
+    border: none;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.74);
+}
+.copyright {
+    background: #323339;
+}
+.copyright .links li {
+    padding-right: 0.5rem;
+    box-shadow: 1px 0px 0px #fff;
+    line-height: 0.8rem;
+}
+.copyright li a {
+    text-decoration: none;
+    color: #fff;
+}
+.copyright li a:hover {
+    opacity: 0.8;
+}
+.copyright .links li:last-child {
+    box-shadow: none;
+}
+
+@media (max-width: 1189px) {
+    #featCarousel .carousel-control-prev {
+        left: 0;
+    }
+    #featCarousel .carousel-control-next {
+        right: 0;
+    }
+}
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        z-index: 99;
+        background: #0c82af;
+        right: 0.8rem;
+        left: 0.8rem;
+    }
+}
+@media (max-width: 767px) {
+    #header {
+        min-height: 50vh;
+    }
+    .footer:before {
+        height: 40px;
+    }
+    .mountain-bg {
+        background-size: 100px;
+        background-position: right bottom;
+    }
+    .fields {
+        bottom: 0;
+    }
 }

@@ -24,18 +24,18 @@
 
 <body>
 
-  <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="assets/img/logo.png" alt="">
+  <header id="header" class="d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-dark pt-0">
+      <div class="container align-items-center align-items-lg-start">
+        <a class="navbar-brand px-2 py-4 text-center  col-8 col-lg-4 col-md-5" href="#">
+          <img src="assets/img/logo.png" alt="" class="img-fluid mx-3">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-none d-lg-flex">
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
             </li>
@@ -46,13 +46,13 @@
               <a class="nav-link" href="#"><i class="bi bi-twitter"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Aanmelden nieuwsbrief</a>
+              <a class="nav-link btn btn-green mx-3 px-4" href="#">Aanmelden nieuwsbrief</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Vakantiehuis huren?</a>
+              <a class="nav-link btn btn-primary round-right px-4" href="#">Vakantiehuis huren?</a>
             </li>
           </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-3 align-items-center main-nav">
             <li class="nav-item">
               <a class="nav-link" href="#">Aanbod</a>
             </li>
@@ -75,7 +75,7 @@
               <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><img src="assets/img/germany-flag.png" alt=""></a>
+              <a class="nav-link" href="#"><img src="assets/img/germany-flag.png" alt="" class="d-block"></a>
             </li>
           </ul>
         </div>
@@ -83,7 +83,208 @@
         
       </div>
     </nav>
+
+    <div class="hero container mt-auto text-white">
+      <div class="row">
+        <div class="col-lg-4 col-md-5">
+          <div class="cta position-relative px-4 pb-4">
+            <div class="cta-text position-relative">
+              <a href="#" class="btn btn-primary round-right">Liever een vakantiehuis huren? <i class="bi bi-arrow-right"></i></a>
+              <h2 class="mt-5 mb-3">Prachtige (vakantie)woningen</h2>
+              <p class="fs-4 pe-5 mb-4">U vindt bij ons het
+                mooiste aanbod uit 
+                het Sauerland!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.cta -->
   </header><!-- /#header -->
+
+  <section class="featured pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center text-md-end text-white mt-4 mt-lg-0">Ons huidige aanbod</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div id="featCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-lg-4 col-md-5">
+                    <div class="item-content ps-5 ps-lg-4 pe-5 pe-md-0 py-4">
+                      <h4 class="text-primary mb-3">Verkocht -Volledig gemoderniseerd huis met appartement in Bömighausen</h4>
+                      <h6><b>Bijzonderheden</b></h6>
+                      <p>- 4 slaapkamers, 2 badkamers
+                      - Combinatie object verhuur en eigen gebruik
+                      - Centraal gelegen, tussen Willingen en Korbach</p>
+                        
+                      <h6><b>Specificatie</b></h6>
+                      <p>Plaats: Willingen-Bömighausen
+                      Prijs:	€ 0
+                      Woonoppervlakte: 
+                      144 m2
+                      </p>
+                      <button class="btn btn-green btn-sm" data-bs-target="#featCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">1</button>
+                      <button class="btn btn-green btn-sm" data-bs-target="#featCarousel" data-bs-slide-to="1" aria-label="Slide 2">2</button>
+                      <button class="btn btn-green btn-sm" data-bs-target="#featCarousel" data-bs-slide-to="2" aria-label="Slide 3">3</button>
+                      <button class="btn btn-primary btn-sm round-right">Ons totale aanbod</button>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-7">
+                    <div class="h-100 slide-img" style="background-image: url(assets/img/slide1.jpg)"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <h1>Slide 2</h1>
+              </div>
+              <div class="carousel-item">
+                <h1>Slide 3</h1>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#featCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#featCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-lg-3 g-4 mt-4">
+        <div class="col">
+          <div class="card h-100 border-0 rounded-0">
+            <div class="card-header text-primary h5 d-flex align-items-center h-100 py-3">Winter in het Sauerland</div>
+            <img src="assets/img/card1.jpg" class="card-img-top border-0 rounded-0" alt="...">
+            <div class="card-body">
+              <p class="card-text">Winter in het Sauerland Het zal niemand ontgaan zijn dat het winter is in het Sauerland. En wat voor een winter, sinds de kerstdagen is het niet meer groen...</p>
+              <a href="" class="btn btn-primary btn-sm round-right">Lees meer</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 rounded-0">
+            <div class="card-header text-primary h5 d-flex align-items-center h-100 py-3">Verkoop van vastgoed &amp; wintbelasting</div>
+            <img src="assets/img/card2.jpg" class="card-img-top border-0 rounded-0" alt="...">
+            <div class="card-body">
+              <p class="card-text">Verkoop van vastgoed en winstbelasting Net als in Nederland is de vastgoedmarkt het afgelopen jaar in een stroomversnelling gekomen. Dit is niet alleen te...</p>
+              <a href="" class="btn btn-primary btn-sm round-right">Lees meer</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 rounded-0">
+            <div class="card-header text-primary h5 d-flex align-items-center h-100 py-3">Veel individuele uitstapjes en alles met gepaste afstand</div>
+            <img src="assets/img/card3.jpg" class="card-img-top border-0 rounded-0" alt="...">
+            <div class="card-body">
+              <p class="card-text">Veel individauele uitstapjes en alles met gepaste afstand Ook dit jaar doet het Sauerland en al zijn ondernemers er alles aan om het u als toerist, eigenaar en...</p>
+              <a href="" class="btn btn-primary btn-sm round-right">Lees meer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mountain-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white my-5">Ziet u zichzelf al wonen of genieten
+              van een welverdiende vakantie in Sauerland?</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- /.featured -->
+
+  <section class="clients">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h6 class="bg-primary d-inline-block text-white round-right py-2 px-3">U kent ons van...</h6>
+          <div class="d-flex justify-content-center py-3">
+            <img src="assets/img/logos.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- /.clients -->
+
+  <footer class="mt-3">
+    <div class="position-relative overflow-hidden footer">
+      <div class="container">
+        <div class="position-absolute fields">
+          <img src="assets/img/fields.jpg" alt="" class="h-100 w-auto">
+        </div>
+        <div class="row position-relative py-3 py-md-5">
+          <div class="col-lg-4 offset-lg-1 col-md-5 offset-md-1">
+            <div class="form-info text-white py-3 py-md-4 px-4 px-md-5 h-100">
+              <h3 class="mb-4">Uw eigen vakantiehuis in het prachtige Sauerland?</h3>
+              <p class="mb-4">Op deze site vindt u woningen, vakantiehuizen en appartementen in het Sauerland. Wonen in het Sauerland betekent sfeervol en uniek wonen in een prachtige omgeving. Sauerland Makelaar is de sleutel naar uw droomwoning in het Sauerland!</p>
+              <p>E-mail voor meer informatie.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-5">
+            <div class="form-contact px-4 px-md-5 py-4 text-white h-100 round-right">
+              <h3>Neem snel contact op</h3>
+              <form>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="" placeholder="Naam...">
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="" placeholder="E-mail...">
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="" placeholder="Telefoonnummer...">
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" rows="5" id="" placeholder="Onderwerp..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Versturen</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright text-white py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="d-block d-md-flex justify-content-between">
+              <ul class="list-unstyled list-inline mb-0 links">
+                <li class="list-inline-item">&copy; 2021</li>
+                <li class="list-inline-item">Sauerlandmakelaar</li>
+              </ul>
+
+              <ul class="list-unstyled list-inline mb-0 links">
+                <li class="list-inline-item"><a href="">Woningaanbod</a></li>
+                <li class="list-inline-item"><a href="">Referenties</a></li>
+                <li class="list-inline-item"><a href="">Contact</a></li>
+                <li class="list-inline-item"><a href="">Informatie</a></li>
+                <li class="list-inline-item"><a href="">Links</a></li>
+                <li class="list-inline-item"><a href="">Algemene voorwaarden</a></li>
+              </ul>
+
+              <ul class="list-unstyled list-inline mb-0">
+                <li class="list-inline-item"><a href=""><i class="bi bi-facebook"></i></a></li>
+                <li class="list-inline-item"><a href=""><i class="bi bi-youtube"></i></a></li>
+                <li class="list-inline-item"><a href=""><i class="bi bi-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
